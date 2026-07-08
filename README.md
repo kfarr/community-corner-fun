@@ -1,12 +1,12 @@
-# Community Corners
+# SF Community Corners
 
-A simple, durable landing page for San Francisco's **Community Corners** pilot — the SFMTA program
+A simple, durable landing page for San Francisco's **Community Corners** pilot: the SFMTA program
 that lets neighborhoods turn safer, daylit street corners into beautiful places with planters and
-murals. It explains *what it is, why it matters, how to get one, the rules, and an FAQ*, and collects
-interest sign-ups.
+murals. It explains *what it is, why it matters, how to get one, the rules, the supporting coalition,
+and an FAQ*, and collects interest sign-ups.
 
-Built as **plain HTML/CSS/JS** — no build step, no dependencies, no framework. Open the folder, edit
-the files, deploy them anywhere.
+Built as **plain HTML/CSS/JS** with no build step, no dependencies, and no framework. Open the folder,
+edit the files, deploy them anywhere.
 
 ## Files
 
@@ -17,12 +17,13 @@ main.js        Tiny optional enhancements (sticky nav, mobile menu, scroll revea
 assets/
   favicon.svg
   img/         Placeholder scene SVGs + REPLACE-ME.md (how to swap real photos)
+  img/partners/  Drop partner logos here + REPLACE-ME.md (how to wire them up)
   video/       REPLACE-ME.md (how to add the hero timelapse)
 ```
 
 ## Preview locally
 
-Just open `index.html` in a browser — that's it. Or serve it (nicer for testing):
+Just open `index.html` in a browser; that's it. Or serve it (nicer for testing):
 
 ```bash
 python3 -m http.server   # then visit http://localhost:8000
@@ -37,13 +38,15 @@ python3 -m http.server   # then visit http://localhost:8000
    See `assets/video/REPLACE-ME.md` for specs (16:9, < 5 MB, muted loop).
 3. **Photos.** Replace the placeholder SVGs in `assets/img/` with real photos (keep filenames, or
    update the `src`/`alt`). See `assets/img/REPLACE-ME.md`.
-4. **Partner orgs** (FAQ "Which organizations support this?") and the **contact email** in the footer
+4. **Partner logos.** The "Supported by" section (`#partners`) lists the coalition as text tiles.
+   Drop real logos into `assets/img/partners/` and swap them in. See
+   `assets/img/partners/REPLACE-ME.md`. Also set the **contact email** in the footer
    (`mailto:hello@example.org`).
-5. **Official source links** in the footer — confirm they still resolve.
+5. **Official source links** in the footer: confirm they still resolve.
 
 ## Editing content
 
-All copy lives in `index.html` as plain text — change wording directly. To restyle, the color
+All copy lives in `index.html` as plain text; change wording directly. To restyle, the color
 palette, fonts, spacing, and radii are CSS variables in `:root` at the top of `styles.css`.
 
 ## Deploy
