@@ -31,18 +31,15 @@ python3 -m http.server   # then visit http://localhost:8000
 
 ## Things to fill in (search the code for `TODO`)
 
-1. **Google Form (sign-up).** In `index.html`, find `<!-- TODO: Google Form -->`.
-   - In your Google Form: **Send → `< >` Embed HTML** and copy the `src` URL.
-   - Paste it into the `<iframe ... src="...">` and into the fallback `<a href="...">` link.
-2. **Hero video.** Add a timelapse to `assets/video/` and uncomment the `<video>` block in `index.html`.
+1. **Hero video.** Add a timelapse to `assets/video/` and uncomment the `<video>` block in `index.html`.
    See `assets/video/REPLACE-ME.md` for specs (16:9, < 5 MB, muted loop).
-3. **Photos.** Replace the placeholder SVGs in `assets/img/` with real photos (keep filenames, or
+2. **Photos.** Replace the placeholder SVGs in `assets/img/` with real photos (keep filenames, or
    update the `src`/`alt`). See `assets/img/REPLACE-ME.md`.
-4. **Partner logos.** The "Supported by" section (`#partners`) lists the coalition as text tiles.
+3. **Partner logos.** The "Supported by" section (`#partners`) lists the coalition as text tiles.
    Drop real logos into `assets/img/partners/` and swap them in. See
    `assets/img/partners/REPLACE-ME.md`. Also set the **contact email** in the footer
    (`mailto:hello@example.org`).
-5. **Official source links** in the footer: confirm they still resolve.
+4. **Official source links** in the footer: confirm they still resolve.
 
 ## Editing content
 
