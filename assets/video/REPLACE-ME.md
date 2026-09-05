@@ -1,12 +1,13 @@
 # Hero video — drop your timelapse here
 
 The hero is built to show a background **timelapse video** (à la karlthefog.com / gggp.org). Until you
-have one, the hero falls back to `assets/img/hero-poster.svg`, so the page looks complete either way.
+have one, the hero shows the still photo `assets/img/hero-cortland-corner.jpg`, which is also the video's `poster`.
 
 ## To enable the video
 1. Add your file(s) here, e.g. `hero.mp4` (H.264) and ideally `hero.webm` (VP9/AV1) for smaller size.
 2. In `index.html`, find `<!-- TODO: hero video -->` and **uncomment** the `<video>` block. It's already
-   configured: `autoplay muted loop playsinline preload="none"` with the SVG as its `poster`.
+   configured: `autoplay muted loop playsinline preload="none"` with the hero photo as its `poster`.
+   Then delete the `<img class="hero-img">` fallback right after it.
 
 ## Recommended specs
 - **Aspect:** 16:9, **resolution:** 1920×1080 (1280×720 is fine for smaller files).

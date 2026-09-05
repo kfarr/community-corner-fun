@@ -15,6 +15,7 @@ section, `#partners`).
    - `walk-sf.svg`
    - `slowdown-sf.svg`
    - `green-sf-now.svg`
+   - `sf-public-space-collective.svg`
 2. In `index.html`, uncomment the `<img>` line inside that partner's tile and delete
    the text-only `<span class="partner-name">…</span>` fallback.
 
@@ -36,3 +37,4 @@ section, `#partners`).
 | Walk SF | https://walksf.org/ |
 | SlowDown SF | https://www.slowdownsf.com/ |
 | Green SF Now | https://greensfnow.org/ |
+| SF Public Space Collective | https://sfpublicspace.org/ |

@@ -16,7 +16,7 @@ styles.css     All styling (design tokens at the top in :root).
 main.js        Tiny optional enhancements (sticky nav, mobile menu, scroll reveal).
 assets/
   favicon.svg
-  img/         Placeholder scene SVGs + REPLACE-ME.md (how to swap real photos)
+  img/         Real corner photos (.jpg); see IMAGES.md for sources, credits & how to add more
   img/partners/  Drop partner logos here + REPLACE-ME.md (how to wire them up)
   video/       REPLACE-ME.md (how to add the hero timelapse)
 ```
@@ -32,14 +32,17 @@ python3 -m http.server   # then visit http://localhost:8000
 ## Things to fill in (search the code for `TODO`)
 
 1. **Hero video.** Add a timelapse to `assets/video/` and uncomment the `<video>` block in `index.html`.
-   See `assets/video/REPLACE-ME.md` for specs (16:9, < 5 MB, muted loop).
-2. **Photos.** Replace the placeholder SVGs in `assets/img/` with real photos (keep filenames, or
-   update the `src`/`alt`). See `assets/img/REPLACE-ME.md`.
+   See `assets/video/REPLACE-ME.md` for specs (16:9, < 5 MB, muted loop). Until then the hero is a
+   still photo of the Cortland Ave corner.
+2. **Photos.** All images are real photos now. To add or swap one, see `assets/img/IMAGES.md`
+   (sizes, sources, and the one third-party credit).
 3. **Partner logos.** The "Supported by" section (`#partners`) lists the coalition as text tiles.
    Drop real logos into `assets/img/partners/` and swap them in. See
-   `assets/img/partners/REPLACE-ME.md`. Also set the **contact email** in the footer
-   (`mailto:hello@example.org`).
-4. **Official source links** in the footer: confirm they still resolve.
+   `assets/img/partners/REPLACE-ME.md`.
+4. **Contact.** The footer "Get involved" column links to the interest form, Green SF Now, Civic Joy
+   Fund, and the GitHub repo. There is deliberately no contact email; add one there if the project
+   gets a shared address.
+5. **Official source links** in the footer: confirm they still resolve.
 
 ## Editing content
 
@@ -52,13 +55,15 @@ It's a static folder, so any static host works:
 
 - **Netlify / Cloudflare Pages / Vercel:** drag-and-drop the folder, or connect the repo (no build
   command, publish directory = project root).
-- **GitHub Pages:** push to a repo and enable Pages on the branch root.
+- **GitHub Pages (current setup):** `.github/workflows/static.yml` deploys the repo root to Pages on
+  every push to `main`. Nothing else to configure.
 
 ## Accessibility & performance notes
 
 - Works with JavaScript disabled (FAQ uses native `<details>`; all nav is real anchors).
 - Respects `prefers-reduced-motion`; AA color contrast; keyboard-navigable; descriptive `alt` text.
-- No external JS/CSS frameworks; images lazy-load below the fold; the hero video is `preload="none"`.
+- No external JS/CSS frameworks; images below the fold lazy-load; the hero image is `fetchpriority="high"`
+  and the (optional) hero video is `preload="none"`. The signup form is an embedded Google Form.
 
 ## Disclaimer
 

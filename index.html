@@ -10,7 +10,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:title" content="SF Community Corners: Plant, paint &amp; protect your corner" />
   <meta property="og:description" content="Turn a safer street corner into a beautiful neighborhood place with planters and murals. A San Francisco community placemaking pilot." />
-  <meta property="og:image" content="assets/img/hero-poster.svg" />
+  <meta property="og:image" content="assets/img/hero-cortland-corner.jpg" />
   <meta name="theme-color" content="#ef8a5e" />
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
@@ -57,20 +57,18 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-media">
         <!--
-          TODO: hero video — drop a timelapse in assets/video/ and uncomment this block.
-          The SVG below stays as the poster/fallback. See assets/video/REPLACE-ME.md.
+          TODO: hero video — drop a timelapse in assets/video/ and uncomment this block,
+          then remove the <img> fallback below. See assets/video/REPLACE-ME.md.
         -->
         <!--
         <video class="hero-video" autoplay muted loop playsinline preload="none"
-               poster="assets/img/hero-poster.svg">
+               poster="assets/img/hero-cortland-corner.jpg">
           <source src="assets/video/hero.webm" type="video/webm" />
           <source src="assets/video/hero.mp4" type="video/mp4" />
         </video>
         -->
-        <!-- TODO: replace hero-poster with a real, literal photo of a Community Corner
-             in a San Francisco neighborhood (planters at a daylit corner). Not a sunset. -->
-        <img class="hero-img" src="assets/img/hero-poster.svg"
-             alt="A San Francisco neighborhood Community Corner: planters brightening the daylit space beside a crosswalk." />
+        <img class="hero-img" src="assets/img/hero-cortland-corner.jpg" width="1600" height="900" fetchpriority="high"
+             alt="The Cortland Avenue Community Corner in Bernal Heights: stone planters and log seats brighten a daylit corner beside a crosswalk on a sunny afternoon." />
         <div class="hero-overlay"></div>
         <div class="grain" aria-hidden="true"></div>
       </div>
@@ -106,6 +104,11 @@
           and fill it with low planters or a hand-painted street mural. The result
           is a corner that's easier to cross <em>and</em> a little more loved.
         </p>
+        <figure class="photo">
+          <img src="assets/img/mural-detail.jpg" loading="lazy" width="1200" height="675"
+               alt="Close-up of a hand-painted street mural: a coyote and a white poppy on deep purple asphalt, right against the red curb." />
+          <figcaption>Paint on asphalt: a detail from the Anderson Street mural, inches from the curb.</figcaption>
+        </figure>
       </div>
     </section>
 
@@ -160,42 +163,59 @@
           <p class="eyebrow eyebrow-dark">See it</p>
           <h2 id="examples-title">What a Community Corner can look like.</h2>
           <p class="section-intro">
-            A few placeholder sketches for now; swap in real neighborhood photos as corners come to
-            life. <span class="muted">(See <code>assets/img/REPLACE-ME.md</code>.)</span>
+            Real corners from Bernal Heights, Noe Valley, and the Mission. Send us yours as your
+            corner comes to life.
           </p>
         </div>
         <div class="cards">
-          <!-- TODO: replace example images with real photos (assets/img/) -->
+          <!-- Photos live in assets/img/. See assets/img/IMAGES.md for sources and credits. -->
           <figure class="card">
-            <img src="assets/img/example-planters.svg" loading="lazy" width="800" height="600"
-                 alt="A corner brightened with low planters inside a painted safety zone." />
+            <img src="assets/img/example-planters.jpg" loading="lazy" width="800" height="600"
+                 alt="Three rust-colored steel planters filled with flowers sit inside a painted safety zone at a San Francisco corner." />
             <figcaption>
               <h3>Planters</h3>
               <p>Low planters that keep sightlines clear. Fill them with drought-tolerant natives, or whatever your block loves to grow.</p>
             </figcaption>
           </figure>
           <figure class="card">
-            <img src="assets/img/example-mural.svg" loading="lazy" width="800" height="600"
-                 alt="A colorful abstract street mural painted within a daylight zone." />
+            <img src="assets/img/example-mural.jpg" loading="lazy" width="800" height="600"
+                 alt="A freshly painted purple street mural with round medallions of a coyote and an owl runs along the curb inside a safety zone." />
             <figcaption>
               <h3>A street mural</h3>
-              <p>A painted corner that says <em>this is our block</em>, designed with neighbors and approved by the Arts Commission.</p>
+              <p>A painted corner that says <em>this is our block</em>: local wildlife on Anderson Street, designed with neighbors and approved by the Arts Commission.</p>
             </figcaption>
           </figure>
           <figure class="card">
-            <img src="assets/img/example-cortland.svg" loading="lazy" width="800" height="600"
-                 alt="The Cortland Avenue pilot corner in Bernal Heights with neighbors gathered nearby." />
+            <img src="assets/img/example-cortland.jpg" loading="lazy" width="800" height="600"
+                 alt="Six neighbors smile beside stone planters and log seats at the Cortland Avenue pilot corner in Bernal Heights." />
             <figcaption>
               <h3>The Cortland Ave pilot</h3>
               <p>SFMTA's first demonstration corner in District&nbsp;9 showed how neighbors and the City can build one together.</p>
             </figcaption>
           </figure>
           <figure class="card">
-            <img src="assets/img/example-hoboken.svg" loading="lazy" width="800" height="600"
-                 alt="A daylit intersection with clear sightlines, inspired by Hoboken, New Jersey." />
+            <img src="assets/img/example-dc-daylighting.jpg" loading="lazy" width="600" height="450"
+                 alt="A Washington, DC intersection with a painted daylight zone of colorful circles, flexible posts, and a planter beside the crosswalk." />
             <figcaption>
               <h3>Proven elsewhere</h3>
-              <p>Cities like Hoboken, NJ have daylighted every intersection and watched crashes fall.</p>
+              <p>Cities like Hoboken, NJ have daylighted every intersection and watched crashes fall. Washington, DC paints its corners, too.</p>
+              <p class="photo-credit">Photo: <a href="https://ggwash.org/view/87539/can-dc-learn-from-hobokens-vision-zero-success" target="_blank" rel="noopener">Greater Greater Washington</a></p>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="assets/img/example-planting-day.jpg" loading="lazy" width="800" height="600"
+                 alt="Neighbors of all ages, including kids, fill stone planters with flowers and potting soil at a corner on planting day." />
+            <figcaption>
+              <h3>Planting day</h3>
+              <p>A Saturday morning, a few bags of soil, and a corner full of neighbors. Kids welcome; that's the point.</p>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <img src="assets/img/example-install.jpg" loading="lazy" width="800" height="600"
+                 alt="Two volunteers set up steel planters beside white bollards at the Sanchez Street corner in Noe Valley." />
+            <figcaption>
+              <h3>Install morning</h3>
+              <p>Planters, soil, and a couple of hours: neighbors setting up a new corner on Sanchez Street.</p>
             </figcaption>
           </figure>
         </div>
@@ -267,7 +287,7 @@
 
         <p class="how-cta">
           Want a nudge when registration opens and the corner map goes live?
-          <a href="#signup">Join the updates list&nbsp;→</a>
+          <a href="#signup">Fill out our interest form&nbsp;→</a>
         </p>
       </div>
     </section>
@@ -316,6 +336,11 @@
               also agrees to hold the City harmless. It's a real commitment.</p>
           </article>
         </div>
+        <figure class="photo">
+          <img src="assets/img/mural-painting.jpg" loading="lazy" width="1024" height="768"
+               alt="Artists kneel on the street painting a purple and yellow mural inside a coned-off safety zone in front of a neighborhood cafe." />
+          <figcaption>Muralists at work inside a coned-off safety zone. Low, flat, and approved: exactly what the rules allow.</figcaption>
+        </figure>
         <p class="rules-note">
           This is a friendly summary, not the official rulebook. For exact requirements see the
           <a href="#sources">SFMTA program documents</a>.
@@ -453,6 +478,12 @@
               <span class="partner-name">Green SF Now</span>
             </a>
           </li>
+          <li>
+            <a class="partner-logo" href="https://sfpublicspace.org/" target="_blank" rel="noopener">
+              <!-- <img src="assets/img/partners/sf-public-space-collective.svg" alt="SF Public Space Collective" /> -->
+              <span class="partner-name">SF Public Space<br />Collective</span>
+            </a>
+          </li>
         </ul>
       </div>
     </section>
@@ -521,9 +552,10 @@
       <div class="footer-col">
         <h2 class="footer-h">Get involved</h2>
         <ul>
-          <li><a href="#signup">Join the updates list</a></li>
-          <!-- TODO: replace with a real contact email -->
-          <li><a href="mailto:hello@example.org">hello@example.org</a></li>
+          <li><a href="#signup">Fill out our interest form</a></li>
+          <li><a href="https://www.greensfnow.org/" target="_blank" rel="noopener">Green SF Now / Sierra Club</a></li>
+          <li><a href="https://civicjoyfund.org/projects/greenstreets" target="_blank" rel="noopener">Civic Joy Fund: Green Streets</a></li>
+          <li><a href="https://github.com/kfarr/community-corner-fun" target="_blank" rel="noopener">Edit this page on GitHub</a></li>
         </ul>
       </div>
     </div>
@@ -534,7 +566,6 @@
         program. It is not affiliated with or endorsed by the City and County of San Francisco. Always
         confirm details with official SFMTA sources.
       </p>
-      <p class="copyright">© <span id="year">2026</span> Community Corners advocates. Made with care in San Francisco.</p>
     </div>
   </footer>
 
